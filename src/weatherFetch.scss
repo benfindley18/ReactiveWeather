@@ -1,0 +1,98 @@
+// Font Styles
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    .title {
+        text-align: center;
+        font-size: 42px;
+        color: rgb(43, 43, 199);
+    }
+}
+
+.current {
+    color: rgb(43, 43, 199);
+}
+
+.low,
+.high {
+    color: rgba(43, 43, 199, 0.925);
+}
+
+// Temp Styles 
+
+.temp {
+    display: flex;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+        .low,
+        .high {
+            margin-right: 2em;
+            margin-left: 2em;
+        }
+
+        .current {
+            margin-top: .5em;
+            margin-right: 2.5em;
+            margin-left: 2.5em;
+            margin-bottom: 1em;
+            font-size: 20px;
+        }
+}
+
+// General Info Styles
+
+.general {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0 3em;
+    border-radius: 20px;
+    background-color: rgb(158, 158, 240);
+    margin-bottom: 2em;
+        .description {
+            margin-right: 2em;
+                h3 {
+                    margin-left: -1.2em;
+                }
+        }
+        .info {
+            margin: 2em 0;
+        }
+}
+
+// Card Styles
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: 0 auto;
+        .parameter,
+        .humidity,
+        .feelsLike,
+        .cloud {
+            width: 10em;
+            margin-right: 2em;
+            margin-left: 2em;
+            padding: 1em 3em;
+            border-radius: 20px;
+            background-color: rgb(158, 158, 240);
+                h3 {
+                    margin-bottom: 2em;
+                }
+                .flexbox {
+                    display: flex;
+                    font-size: 30px;
+                        p {
+                            margin-top: -.2em;
+                            margin-right: 2em;
+                        }
+                }
+        }
+}
