@@ -52,7 +52,9 @@ function WeatherFetch() {
 
     return (
         <div className='container'>
-            <h1 className='title'> Reactive Weather</h1>
+            <div className='titleContainer'>
+                <h1 className='title'> Reactive Weather</h1>
+            </div>
 
             <div className='temp'>
                 <div className='low'>

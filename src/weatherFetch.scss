@@ -9,6 +9,7 @@
 .container {
     .title {
         text-align: center;
+        margin: 0 auto;
         font-size: 42px;
         color: rgb(43, 43, 199);
     }
@@ -95,4 +96,36 @@
                         }
                 }
         }
+}
+
+
+// Mobile Styles 
+
+@media only screen and (max-width: 600px) {
+    .temp {
+        .low,
+        .current,
+        .high {
+            margin: 2em 1em;
+        }
+    }
+
+    .general {
+        .description {
+            h3 {
+                position: relative;
+                left: 2.5em;
+            }
+        }
+    }
+
+    .cards {
+
+            .humidity,
+            .feelsLike,
+            .cloud {
+                margin: 1em auto;
+            }
+    }
+
 }
