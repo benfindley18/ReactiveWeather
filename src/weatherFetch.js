@@ -6,8 +6,6 @@ import { faTint } from '@fortawesome/free-solid-svg-icons'
 import { faThermometerFull } from '@fortawesome/free-solid-svg-icons'
 import { faCloud } from '@fortawesome/free-solid-svg-icons'
 
-require('dotenv').config();
-
 const drip = <FontAwesomeIcon icon={faTint} />
 const thermo = <FontAwesomeIcon icon={faThermometerFull} />
 const cloud = <FontAwesomeIcon icon={faCloud} />
