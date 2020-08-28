@@ -6,10 +6,12 @@ import { faTint } from '@fortawesome/free-solid-svg-icons'
 import { faThermometerFull } from '@fortawesome/free-solid-svg-icons'
 import { faCloud } from '@fortawesome/free-solid-svg-icons'
 
+// Setting Icon Elements
 const drip = <FontAwesomeIcon icon={faTint} />
 const thermo = <FontAwesomeIcon icon={faThermometerFull} />
 const cloud = <FontAwesomeIcon icon={faCloud} />
 
+// Making API Elements
 function WeatherFetch() {
     const key = process.env.REACT_APP_WEATHER_API_KEY;
     const city = '4259418'
@@ -28,6 +30,7 @@ function WeatherFetch() {
     const [feelsLike, setFeelsLike] = useState('');
     const [cloudCover, setCloudCover] = useState('');
 
+    // Setting API Elements
     useEffect(() => {
         fetch('https://api.openweathermap.org/data/2.5/weather?id=' + city + '&APPID=' + key + '&units=imperial')
             .then(res => res.json())
@@ -49,6 +52,7 @@ function WeatherFetch() {
                 setCloudCover(data.clouds.all)
             })
     }, [])
+
 
     return (
         <div className='container'>
@@ -82,7 +86,7 @@ function WeatherFetch() {
                 <div className='info'>
                     <p>Location: {location} </p>
                     <p>Wind Speed: {windSpeed} MPH </p>
-                    <p>Wind Direction: {windDeg}° </p>
+                    <p>Wind Direction: {windDeg} </p>
                 </div>
             </div>
 
@@ -90,7 +94,7 @@ function WeatherFetch() {
 
                 <div className='humidity'>
                     <h3>Humidity</h3>
-                    <div className='flexbox'>
+                    <div className='flexBox'>
                         <p>{humidity}%</p>
                         {drip}
                     </div>
@@ -98,7 +102,7 @@ function WeatherFetch() {
 
                 <div className='feelsLike'>
                     <h3>Feels Like</h3>
-                    <div className='flexbox'>
+                    <div className='flexBox'>
                         <p>{feelsLike}°F</p>
                         {thermo}
 
@@ -107,7 +111,7 @@ function WeatherFetch() {
 
                 <div className='cloud'>
                     <h3>Cloud Coverage</h3>
-                    <div className='flexbox'>
+                    <div className='flexBox'>
                         <p>{cloudCover}%</p>
                         {cloud}
 

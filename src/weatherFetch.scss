@@ -56,7 +56,6 @@
     border-radius: 20px;
     background-color: rgb(158, 158, 240);
     margin-bottom: 2em;
-    -webkit-box-shadow: -1px -1px 23px 1px rgba(66,66,66,0.30); 
     box-shadow: -1px -1px 23px 1px rgba(66,66,66,0.30);
         .description {
             margin-right: 2em;
@@ -86,12 +85,12 @@
             padding: 1em 3em;
             border-radius: 20px;
             background-color: rgb(158, 158, 240);
-            -webkit-box-shadow: -1px 4px 23px 2px rgba(66,66,66,0.43); 
             box-shadow: -1px 4px 23px 2px rgba(66,66,66,0.43);
                 h3 {
                     margin-bottom: 2em;
+                    text-align: center;
                 }
-                .flexbox {
+                .flexBox {
                     display: flex;
                     font-size: 30px;
                         p {
